@@ -10,7 +10,7 @@ RUN mkdir /vmx
 WORKDIR /vmx
 
 RUN \
-  wget http://files.vision.ai/releases/vmxserver.current.tar.gz && \
+  wget http://files.vision.ai/vmx/VMXserver/Linux/VMXserver_Linux.stable.tar.gz && \
   tar xfzv vmxserver.current.tar.gz && \
   rm vmxserver.current.tar.gz
 
