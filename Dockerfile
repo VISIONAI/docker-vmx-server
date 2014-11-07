@@ -11,8 +11,8 @@ WORKDIR /vmx
 
 RUN \
   wget http://files.vision.ai/vmx/VMXserver/Linux/VMXserver_Linux.stable.tar.gz && \
-  tar xfzv vmxserver.current.tar.gz && \
-  rm vmxserver.current.tar.gz
+  tar xfzv VMXserver_Linux.stable.tar.gz && \
+  rm VMXserver_Linux.stable.tar.gz
 
 ADD config.json /vmx/build/config.json
 
