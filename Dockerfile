@@ -16,11 +16,8 @@ RUN \
 
 ADD config.json /vmx/build/config.json
 
-RUN mkdir -p /vmx/build/models
-RUN mkdir -p /vmx/build/sessions
-
 VOLUME /vmx/build
 
 RUN mkdir -p /vmx/data
-RUN cd /vmx/data && wget http://vm-x.com/3f61ce5c7642bc2f24f7286f600b3e6b
+RUN cd /vmx/data && wget http://files.vision.ai/vmx/pretrained/3f61ce5c7642bc2f24f7286f600b3e6b
 VOLUME /vmx/data
